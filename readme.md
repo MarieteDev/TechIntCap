@@ -10,7 +10,7 @@ Ensure you have the following installed on your system:
 
 Clone the repository and navigate to the project directory:
 ```sh
-git clone <repository-url>
+git clone https://github.com/MarieteDev/TechIntCap.git
 cd techintcap
 ```
 
@@ -38,7 +38,7 @@ http://localhost:8080/swagger-ui/index.html
 You can test the API directly in Swagger or via `curl`. Example request:
 
 ```sh
-curl -X GET "http://localhost:8080/v1/products" -H "accept: application/json"
+curl --request GET --url 'http://localhost:8080/v1/products?size=7&page=1&direction=desc&category=Electronics&sortBy=price'
 ```
 
 ## Database Initialization
